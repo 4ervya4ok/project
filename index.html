@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой проект — Веб-вёрстка</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">My<span>Site</span></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#about">О нас</a></li>
+          <li><a class="nav__link" href="#services">Услуги</a></li>
+          <li><a class="nav__link" href="#gallery">Галерея</a></li>
+          <li><a class="nav__link" href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title">Создаём современные сайты</h1>
+      <p class="hero__subtitle">
+        Учебный проект по дисциплине <strong>«Веб-вёрстка HTML/CSS»</strong>.
+        Адаптивный дизайн, анимации и семантическая разметка.
+      </p>
+      <a href="#contact" class="btn">Связаться с нами</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section__title">О нас</h2>
+      <p class="section__text">
+        Мы — команда, которая учится делать <em>красивые</em> и удобные сайты.
+        Используем Flexbox, Grid и CSS-переменные.
+      </p>
+      <ul class="features">
+        <li class="features__item">Адаптивная вёрстка</li>
+        <li class="features__item">Современный дизайн</li>
+        <li class="features__item">Чистый код</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES (GRID) ===== -->
+  <section id="services" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Услуги</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card__badge">New</div>
+          <h3 class="card__title">Вёрстка лендингов</h3>
+          <p class="card__text">Одностраничные сайты под ключ.</p>
+        </article>
+        <article class="card">
+          <div class="card__badge">Hot</div>
+          <h3 class="card__title">Адаптивный дизайн</h3>
+          <p class="card__text">Корректно на всех устройствах.</p>
+        </article>
+        <article class="card">
+          <div class="card__badge">Pro</div>
+          <h3 class="card__title">Анимации</h3>
+          <p class="card__text">Плавные переходы и keyframes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <h2 class="section__title">Галерея</h2>
+      <div class="gallery">
+        <figure class="gallery__item">
+          <img src="https://picsum.photos/seed/1/600/400" alt="Работа 1">
+          <figcaption>Проект №1</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://picsum.photos/seed/2/600/400" alt="Работа 2">
+          <figcaption>Проект №2</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://picsum.photos/seed/3/600/400" alt="Работа 3">
+          <figcaption>Проект №3</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT (FORM) ===== -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Свяжитесь с нами</h2>
+      <form class="form" action="#" method="post" novalidate>
+        <div class="form__group">
+          <label class="form__label" for="name">Имя</label>
+          <input class="form__input" id="name" name="name" type="text"
+                 placeholder="Иван Иванов" required minlength="2">
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="email">Email</label>
+          <input class="form__input" id="email" name="email" type="email"
+                 placeholder="you@example.com" required>
+        </div>
+        <div class="form__group">
+          <label class="form__label" for="message">Сообщение</label>
+          <textarea class="form__input form__textarea" id="message" name="message"
+                    placeholder="Ваше сообщение..." required></textarea>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 MySite. Учебный проект.</p>
+    </div>
+  </footer>
+
+  <!-- Кнопка "наверх" (position: fixed) -->
+  <a href="#" class="up-btn" aria-label="Наверх">↑</a>
+
+</body>
+</html>
